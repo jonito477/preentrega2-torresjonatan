@@ -1,0 +1,315 @@
+*{
+    font-family:"Ubuntu";color: aliceblue;
+    margin: 0%;
+    padding: 0%; 
+}
+body{
+    background-color: rgb(0, 70, 156);
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:  auto 1000px auto;
+    grid-template-areas: 
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer"
+    ;
+    min-height: 100%;
+    position: relative;
+}
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    padding: 12px 18px;
+    margin-bottom: 5%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+
+}
+header li{
+    display: inline-block;
+    padding: 1%;
+}
+header ul{
+    width: 30%;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+main{
+    background-color: rgb(0, 70, 156);
+    width: 100%;
+    height: 80vh;
+    padding: 1%;
+    align-content: center;
+    text-align: left;
+    grid-area: main;
+    grid-template-columns: repeat(2, 6fr); 
+    grid-template-rows: repeat(2, 1fr);
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    width: 100%;
+    margin-top: auto;
+    text-align: center;
+    display: block;
+    grid-area: footer;
+    bottom: 0;
+}
+li{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+}
+a{
+    color: aliceblue;
+}
+.navbar{
+    background-color: black;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+p{
+    font-weight: normal;
+}
+table{
+    background-color: rgb(red, green, blue) (9,9,148) ;
+    text-align: center;
+    border: 2px;
+    padding: 30px; 
+    border-color: rgb(0, 0, 0);
+    border-radius: 0%;
+}
+input{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.contenedordecaja1y2{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+.caja1{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.caja2{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.titulo{
+    background-color: rgb(0, 85, 212);
+    width: 100%;
+}
+.historia{
+    text-align: center;
+    padding: 20px;
+    padding-right: 50px;
+    margin: 40px;
+}
+textarea{
+    color: black;
+}
+.parches{
+    text-align: left;
+    margin: 15px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.mapa{
+    text-align: center;
+    padding: 20px;
+}
+.mapaubicacion{
+    align-content: center;
+}
+.videotrailer{
+    width: 500px;
+    height: 470px;
+}
+.banner{
+    width: 500px;
+    height: 470px;
+}
+.contenedorimagenes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: block;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+}
+.caja3{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.caja4{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.caja5{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.caja6{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+}
+.thor{
+    height: 600px;
+    width: 470px;
+    padding: 10px;
+}
+.kratos{
+    height: 600px;
+    width: 470;
+    padding: 10px;
+}
+.protagonistas{
+    height: 400px;
+    width: 700px;
+    padding: 10px;
+}
+.fondo{
+    height: 400px;
+    width: 700px;
+    padding: 10px
+}
+.contenedorvideos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+}
+.opinion{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+.curiosidades{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+.contenedoraudio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media(max-width: 576px){
+    body{
+        grid-template-rows:  auto 1000px auto;
+        grid-template-areas: 
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer"
+        }
+    header{
+        background-color: black;
+        width: 100%;
+        height: auto;
+        display: inline-flex;
+    }
+    main{
+        background-color: rgb(0, 70, 156);
+        align-content: center;
+    }
+    footer{
+        background-color: black;
+        margin-top: auto;
+    }
+    .contenedordecaja1y2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px;
+        margin: 10px;
+    }
+    .caja1{
+        display: flex;
+        flex-direction: block;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+    }
+    .caja2{
+        display: flex;
+        flex-direction: row;
+        margin: 5px;
+        padding: 10px;
+        justify-content: center;
+    }
+    .videotrailer{
+        width: 400px;
+        height: 270px;
+        align-content: space-evenly;
+    }
+    .banner{
+        width: 450px;
+        height: 300px;
+    }    
+    .contenedorimagenes{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: block;
+        justify-content: center;
+        margin: 30px;
+        padding: 10px;
+    }
+    .contenedorvideos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 15px;
+        padding: 10px;
+    }    
+}
