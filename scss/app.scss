@@ -57,10 +57,60 @@ main{
         padding: 10px;
     }
     .banner{
-        height: 350px;
         width: 400px;
     }
-    
+    .table{
+        border-color: aliceblue;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .carousel-item{
+        justify-content: center;
+    }
+    .contenedorvideos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .opinion{
+        padding: 10px;
+        width:"560px"; 
+        height:"415px";
+    }
+    .opinion1{
+        width: 500px;
+        height: 350px;
+        padding: 10px;
+    }
+    .opinion2{
+        width: 500px;
+        height: 350px;
+        padding: 10px;
+    }
+    .contenedoraudio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+    .formulariodecontacto{
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ubicacion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+    .via-decontacto{
+        padding: 10px;
+    }
+    .goglemaps{
+        padding: 15px;
+    }
 }
 footer{
     background-color: $color-fondo-primario;
@@ -79,4 +129,5 @@ h1,h2,h3,h4,h5,h6,th{
 p{
     color: $color-letra;
     text-align: center;
+    font-weight: 300;
 }
