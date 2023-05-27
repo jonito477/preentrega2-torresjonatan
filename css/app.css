@@ -37,70 +37,75 @@ main ul {
   text-align: center;
   color: rgb(255, 255, 255);
 }
-main .caja1 {
+main li {
+  text-align: center;
+}
+
+.caja1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-main .videotrailer {
+
+.videotrailer {
   width: 500px;
   height: 450px;
   padding: 10px;
 }
-main .banner {
+
+.banner {
   width: 400px;
 }
-main .table {
+
+.table {
   border-color: aliceblue;
   border-radius: 10px;
   padding: 15px;
 }
-main .carousel-item {
-  justify-content: center;
-}
-main .contenedorvideos {
+
+.contenedorvideos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
 }
-main .opinion {
+
+.opinion {
   padding: 10px;
   width: "560px";
   height: "415px";
 }
-main .opinion1 {
+
+.opinion1 {
   width: 500px;
   height: 350px;
   padding: 10px;
 }
-main .opinion2 {
+
+.opinion2 {
   width: 500px;
   height: 350px;
   padding: 10px;
 }
-main .contenedoraudio {
+
+.contenedoraudio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 10px;
 }
-main .formulariodecontacto {
-  display: block;
+
+.formulario {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
-main .ubicacion {
+
+.ubicacion {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5px;
-}
-main .via-decontacto {
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
-}
-main .goglemaps {
-  padding: 15px;
 }
 
 footer {
