@@ -1,5 +1,5 @@
 $color-fondo-primario: black;
-$color-fondo-secundario: rgb(0, 70, 156);;
+$color-fondo-secundario: rgb(0, 70, 156);
 $color-letra: white;
 
 @if $color-fondo-secundario == rgb(0, 70, 156) {
@@ -11,6 +11,7 @@ $color-letra: white;
     margin: 0;
     padding: 0;
 }
+
 body{
     font-family: "ubuntu" sans-serif;
     display: grid;
@@ -20,7 +21,6 @@ body{
         "header header header"
         "main main main"
         "footer footer footer"
-
 }
 header{
     background-color: black;
@@ -46,7 +46,21 @@ main{
         text-align: center;
         color: $color-letra;
     }
-
+    .caja1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .videotrailer{
+        width: 500px;
+        height: 450px;
+        padding: 10px;
+    }
+    .banner{
+        height: 350px;
+        width: 400px;
+    }
+    
 }
 footer{
     background-color: $color-fondo-primario;
@@ -56,7 +70,7 @@ footer{
     height: 10vh;
     align-items: center;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,th{
     background-color: $color-fondo-secundario;
     text-align: center;
     padding: 20px;
