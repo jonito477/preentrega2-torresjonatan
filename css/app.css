@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "ubuntu" sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+
+header {
+  background-color: black;
+  grid-area: header;
+  height: 10vh;
+}
+header .logo {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+main {
+  background-color: rgb(0, 70, 156);
+  grid-area: main;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+main ul {
+  list-style-type: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  background-color: black;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: rgb(0, 70, 156);
+  text-align: center;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */

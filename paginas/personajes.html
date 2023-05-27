@@ -3,24 +3,40 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/app.css">
         <link rel="shortcut icon" href="../imagenes/favicon.webp">
         <title>Personajes</title>
     </head>
     <body>
         <header id="header">
-            <img src="../imagenes/logo god of war pagina.jpg" height="50px" width="100px" alt="logo">
-            <ul>   
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="">Personajes</a></li>
-                <li><a href="./actualizaciones.html">Actualizaciones</a></li>
-                <li><a href="./bandasonora.html">Audiovisual</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+            <img src="../imagenes/logo god of war pagina.jpg" height="50px" width="100px" alt="logo" class="logo"> 
+            <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000;">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Home</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="./personajes.html">Personajes</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./actualizaciones.html">Actualizaciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./audiovisual.html">Audiovisual</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main>
             <h1 class="titulo">Personajes</h1>
@@ -83,6 +99,6 @@
             <a href="#header">Volver Arriba</a>
             <a href="../index.html">Volver Pagina Principal</a>
         </footer>
-        
+          <script src="../js/bootstrap.min.js"></script>
     </body>
 </html>
