@@ -46,6 +46,10 @@ main{
         text-align: center;
         color: $color-letra;
     }
+    li{
+        text-align: center;
+    }
+    }
     .caja1{
         display: flex;
         flex-wrap: wrap;
@@ -63,9 +67,6 @@ main{
         border-color: aliceblue;
         border-radius: 10px;
         padding: 15px;
-    }
-    .carousel-item{
-        justify-content: center;
     }
     .contenedorvideos{
         display: flex;
