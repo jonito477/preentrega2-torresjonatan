@@ -1,12 +1,24 @@
-$color-fondo-primario: black;
-$color-fondo-secundario: rgb(0, 70, 156);
-$color-letra: white;
 
-@if $color-fondo-secundario == rgb(0, 70, 156) {
+$colores:(
+    primario: black,
+    secundario: rgb(0, 70, 156)
+);
+
+$color-letra: white;
+$color-button: blue;
+
+@if map-get($colores, secundario ) == rgb(0, 70, 156) {
     $color-letra: rgb(255, 255, 255);
 }@else{
     $color-letra: rgb(0, 0, 0)
 }
+
+@each $boton in $color-button{
+    .button-#{$var}{
+        background-color: $boton;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -35,7 +47,7 @@ header{
     }
 }
 main{
-    background-color: rgb(0, 70, 156);
+    background-color: map-get($colores, secundario );
     grid-area: main;
     height: 100%;
     display: flex;
@@ -108,7 +120,7 @@ main{
     }
 
 footer{
-    background-color: $color-fondo-primario;
+    background-color: map-get($colores, primario );
     grid-area: footer;
     display: flex;
     flex-direction: column;
@@ -116,7 +128,7 @@ footer{
     align-items: center;
 }
 h1,h2,h3,h4,h5,h6,th{
-    background-color: $color-fondo-secundario;
+    background-color: map-get($colores , secundario );
     text-align: center;
     padding: 20px;
     color: $color-letra;

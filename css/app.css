@@ -1,133 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 17 |     .button-#{$var}{
+ *    |               ^^^^
+ *    '
+ *   scss\app.scss 17:15  root stylesheet */
 
-body {
-  font-family: "ubuntu" sans-serif;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 17 \2502      .button-#{$var}{\d\a    \2502                ^^^^\a    \2575 \a   scss\\app.scss 17:15  root stylesheet";
 }
-
-header {
-  background-color: black;
-  grid-area: header;
-  height: 10vh;
-}
-header .logo {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
-}
-
-main {
-  background-color: rgb(0, 70, 156);
-  grid-area: main;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-main ul {
-  list-style-type: none;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-main li {
-  text-align: center;
-}
-
-.caja1 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.videotrailer {
-  width: 500px;
-  height: 450px;
-  padding: 10px;
-}
-
-.banner {
-  width: 400px;
-}
-
-.table {
-  border-color: aliceblue;
-  border-radius: 10px;
-  padding: 15px;
-}
-
-.contenedorvideos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-}
-
-.opinion {
-  padding: 10px;
-  width: "560px";
-  height: "415px";
-}
-
-.opinion1 {
-  width: 500px;
-  height: 350px;
-  padding: 10px;
-}
-
-.opinion2 {
-  width: 500px;
-  height: 350px;
-  padding: 10px;
-}
-
-.contenedoraudio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ubicacion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-footer {
-  background-color: black;
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  height: 10vh;
-  align-items: center;
-}
-
-h1, h2, h3, h4, h5, h6, th {
-  background-color: rgb(0, 70, 156);
-  text-align: center;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-}
-
-p {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-weight: 300;
-}
-
-/*# sourceMappingURL=app.css.map */
