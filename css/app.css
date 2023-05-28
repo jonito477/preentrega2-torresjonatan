@@ -108,6 +108,18 @@ main li {
   padding: 10px;
 }
 
+.animacion {
+  padding: 10px;
+}
+.animacion a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.animacion a:hover {
+  transform: scale(2);
+  color: red;
+}
+
 footer {
   background-color: black;
   grid-area: footer;

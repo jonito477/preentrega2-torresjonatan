@@ -118,6 +118,19 @@ main{
         align-items: center;
         padding: 10px;
     }
+    .animacion{
+        padding: 10px;
+        a{
+            text-decoration: none;
+            color: aliceblue;
+            &:hover{
+                transform: scale(2);
+                color: red;
+            }
+        }
+
+        
+    }
 
 footer{
     background-color: map-get($colores, primario );
