@@ -1,24 +1,28 @@
 
-$colores:(
-    primario: black,
-    secundario: rgb(0, 70, 156)
+$colores: (
+  primario: black,
+  secundario: rgb(0, 70, 156)
 );
 
 $color-letra: white;
 $color-button: blue;
 
-@if map-get($colores, secundario ) == rgb(0, 70, 156) {
-    $color-letra: rgb(255, 255, 255);
-}@else{
-    $color-letra: rgb(0, 0, 0)
+@if map-get($colores, secundario) == rgb(0, 70, 156) {
+  $color-letra: rgb(255, 255, 255);
+} @else {
+  $color-letra: rgb(0, 0, 0);
 }
 
-@each $boton in $color-button{
-    .button-#{$var}{
-        background-color: $boton;
+@each $color in $colores {
+  $nombre-color: nth($color, 1);
+  $valor-color: nth($color, 2);
+
+  body {
+    @if $nombre-color == secundario {
+      background-color: $valor-color;
     }
+  }
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -40,10 +44,6 @@ header{
     height: 10vh;
     .logo{
         display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: space-between;
-        justify-items: center;
     }
 }
 main{
